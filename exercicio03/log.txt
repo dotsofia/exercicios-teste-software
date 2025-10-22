@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-7.4.3, pluggy-1.6.0 -- C:\Users\unifgfranca\exercicios-teste-software\venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.9', 'Platform': 'Windows-11-10.0.22631-SP0', 'Packages': {'pytest': '7.4.3', 'pluggy': '1.6.0'}, 'Plugins': {'html': '4.1.1', 'metadata': '3.1.1'}}
+rootdir: C:\Users\unifgfranca\exercicios-teste-software
+configfile: pytest.ini
+plugins: html-4.1.1, metadata-3.1.1
+collecting ... collected 4 items
+
+tests\test_todos_crud.py::test_create_todo PASSED                        [ 25%]
+tests\test_todos_crud.py::test_read_todo_existing PASSED                 [ 50%]
+tests\test_todos_crud.py::test_update_todo_patch PASSED                  [ 75%]
+tests\test_todos_crud.py::test_delete_and_verify PASSED                  [100%]
+
+============================== 4 passed in 1.31s ==============================

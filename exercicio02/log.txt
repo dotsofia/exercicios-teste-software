@@ -1,0 +1,19 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-7.4.3, pluggy-1.6.0 -- C:\Users\unifgfranca\exercicios-teste-software\venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.9', 'Platform': 'Windows-11-10.0.22631-SP0', 'Packages': {'pytest': '7.4.3', 'pluggy': '1.6.0'}, 'Plugins': {'html': '4.1.1', 'metadata': '3.1.1'}}
+rootdir: C:\Users\unifgfranca\exercicios-teste-software
+configfile: pytest.ini
+plugins: html-4.1.1, metadata-3.1.1
+collecting ... collected 8 items
+
+tests\test_products_api.py::test_listar_todos_produtos PASSED            [ 12%]
+tests\test_products_api.py::test_buscar_produto_por_id PASSED            [ 25%]
+tests\test_products_api.py::test_filtrar_por_categoria_parametrizado PASSED [ 37%]
+tests\test_products_api.py::test_validar_schema_da_resposta PASSED       [ 50%]
+tests\test_products_api.py::test_limite_de_produtos_retornados[1] PASSED [ 62%]
+tests\test_products_api.py::test_limite_de_produtos_retornados[3] PASSED [ 75%]
+tests\test_products_api.py::test_limite_de_produtos_retornados[5] PASSED [ 87%]
+tests\test_products_api.py::test_limite_de_produtos_retornados[10] PASSED [100%]
+
+============================== 8 passed in 6.67s ==============================

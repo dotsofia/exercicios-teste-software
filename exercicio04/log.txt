@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-7.4.3, pluggy-1.6.0 -- C:\Users\unifgfranca\exercicios-teste-software\venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.9', 'Platform': 'Windows-11-10.0.22631-SP0', 'Packages': {'pytest': '7.4.3', 'pluggy': '1.6.0'}, 'Plugins': {'html': '4.1.1', 'metadata': '3.1.1'}}
+rootdir: C:\Users\unifgfranca\exercicios-teste-software
+configfile: pytest.ini
+plugins: html-4.1.1, metadata-3.1.1
+collecting ... collected 0 items / 1 error
+
+=================================== ERRORS ====================================
+____________ ERROR collecting exercicio04/tests/test_login_pom.py _____________
+ImportError while importing test module 'C:\Users\unifgfranca\exercicios-teste-software\exercicio04\tests\test_login_pom.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests\test_login_pom.py:3: in <module>
+    from pages.login_page import LoginPage
+E   ModuleNotFoundError: No module named 'pages'
+=========================== short test summary info ===========================
+ERROR tests\test_login_pom.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+============================== 1 error in 0.14s ===============================
