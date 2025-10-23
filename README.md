@@ -8,7 +8,7 @@ Este repositório contém os exercícios de testes automatizados. Cada exercíci
 * **Log de execução (log.txt)**
 ---
 
-## Estrutura esperada do repositório
+## Estrutura do repositório
 
 ```
 /exercicios
