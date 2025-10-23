@@ -1,4 +1,4 @@
-# README — Testes dos Exercícios
+# README - Testes dos Exercícios
 
 Este repositório contém os exercícios de testes automatizados. Cada exercício inclui:
 
