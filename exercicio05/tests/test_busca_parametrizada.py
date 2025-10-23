@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 ])
 def test_busca_google(chrome_driver, termo_busca):
     driver = chrome_driver
-    driver.get("https://www.google.com")
+    driver.get("https://duckduckgo.com/")
     
     search_box = driver.find_element(By.NAME, "q")
     search_box.send_keys(termo_busca)

@@ -14,8 +14,8 @@ def tem_chrome_instalado():
 @pytest.fixture
 def chrome_driver():
     """Fixture que retorna uma instância do Chrome WebDriver"""
-    if not tem_chrome_instalado():
-        pytest.skip("Chrome não está instalado neste ambiente")
+    # if not tem_chrome_instalado():
+    #     pytest.skip("Chrome não está instalado neste ambiente")
     
     options = Options()
     options.add_argument('--start-maximized')

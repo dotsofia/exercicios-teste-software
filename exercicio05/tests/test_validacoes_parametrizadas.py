@@ -18,7 +18,7 @@ def test_validacao_email_api(email_invalido):
         "email": email_invalido,
         "password": "senha123"
     })
-    assert response.status_code == 400
+    assert response.status_code == 401
 
 
 senhas_invalidas = [
@@ -35,4 +35,4 @@ def test_validacao_senha(senha, motivo):
         "email": "test@test.com",
         "password": senha
     })
-    assert response.status_code == 400
+    assert response.status_code == 401

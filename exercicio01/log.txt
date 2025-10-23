@@ -5,11 +5,12 @@ metadata: {'Python': '3.13.9', 'Platform': 'Windows-10-10.0.19045-SP0', 'Package
 rootdir: C:\Users\Sofia\exercicios-teste-software
 configfile: pytest.ini
 plugins: html-4.1.1, metadata-3.1.1
-collecting ... collected 4 items
+collecting ... collected 5 items
 
-tests\test_login_pom.py::test_login_com_sucesso PASSED                   [ 25%]
-tests\test_login_pom.py::test_login_email_invalido PASSED                [ 50%]
-tests\test_login_pom.py::test_login_senha_incorreta PASSED               [ 75%]
-tests\test_login_pom.py::test_login_campos_vazios PASSED                 [100%]
+tests\test_login.py::test_login_success PASSED                           [ 20%]
+tests\test_login.py::test_login_invalid_email PASSED                     [ 40%]
+tests\test_login.py::test_login_wrong_password PASSED                    [ 60%]
+tests\test_login.py::test_login_empty_fields PASSED                      [ 80%]
+tests\test_login.py::test_error_messages_displayed PASSED                [100%]
 
-======================== 4 passed in 70.23s (0:01:10) =========================
+======================== 5 passed in 97.74s (0:01:37) =========================

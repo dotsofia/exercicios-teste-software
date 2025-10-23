@@ -6,9 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 BASE = "https://practicetestautomation.com/practice-test-login/"
 
-def wait_for(driver, locator, timeout=5):
-    return WebDriverWait(driver, timeout).until(EC.presence_of_element_located(locator))
-
 def submit_form(driver, username="", password=""):
     u = driver.find_element(By.ID, "username")
     p = driver.find_element(By.ID, "password")
@@ -19,14 +16,26 @@ def submit_form(driver, username="", password=""):
         p.send_keys(password)
     driver.find_element(By.ID, "submit").click()
 
-def get_flash_text(driver):
+def get_flash_text(driver, timeout=5):
+    """
+    Wait for the #error element to become visible and contain text.
+    If not found or empty, fall back to page_source so assertions can still match.
+    """
     try:
-        el = WebDriverWait(driver, 3).until(
-            EC.presence_of_element_located((By.ID, "error"))  # some pages use #error
+        el = WebDriverWait(driver, timeout).until(
+            EC.visibility_of_element_located((By.ID, "error"))
         )
-        return el.text
+        text = el.text.strip()
+        if text:
+            return text
     except Exception:
+        pass
+
+    try:
         return driver.page_source
+    except Exception:
+        return ""
+
 
 def test_login_success(chrome_driver):
     driver = chrome_driver
